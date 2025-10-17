@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GR"
+        android:textSize="60sp"
+        android:background="#8EE653"
+        android:textAlignment="center"
+
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#DC9A3F"
+        android:text="4d"
+        android:textAlignment="center"
+        android:textSize="60sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#8EE653"
+        android:text="2"
+        android:textAlignment="center"
+        android:textSize="60sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:textSize="30dp"
+        android:text="Technik"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:text="Programista"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="30dp"
+        android:text="4d"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF9800"
+            android:orientation="vertical"
+            android:layout_marginEnd="20dp"
+            android:padding="20dp">
+
+            <View
+                android:id="@+id/one"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@color/white" />
+
+            <View
+                android:id="@+id/two"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/one"
+                android:layout_margin="5dp"
+                android:background="@color/white" />
+
+            <View
+                android:id="@+id/three"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/two"
+                android:layout_margin="5dp"
+                android:background="@color/white" />
+
+            <View
+                android:id="@+id/four"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/three"
+                android:layout_margin="5dp"
+                android:background="@color/white" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_height="match_parent">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#1E23CA">
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#FFEB3B"
+                    android:textColor="@color/black"
+                    android:text="Button" />
+            </FrameLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#673AB7"
+                android:columnCount="4"
+                android:padding="10dp"
+                android:rowCount="3">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FF0000" />
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_row="2"
+                    android:background="#FF0000" />
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:background="#FF0000" />
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:background="#FF0000" />
+
+                <View
+                    android:layout_width="91dp"
+                    android:layout_height="40dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_columnSpan="2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FF0000" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_column="2"
+                    android:layout_row="2"
+                    android:background="#FF0000" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="137dp"
+                    android:layout_row="0"
+                    android:layout_rowSpan="3"
+                    android:layout_column="3"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#FF0000" />
+
+
+            </GridLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:hint="Imie,Nazwisko"
+            />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textSize="30dp"
+            android:hint="Klasa"
+            />
+
+    </LinearLayout>
+</LinearLayout>
